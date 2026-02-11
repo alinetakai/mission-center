@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central de Missões</title>
+<link rel="shortcut icon" href="https://i.postimg.cc/CKdVMpGb/gato_cafe_computador.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 Central de Missões 💻</h1>
+
+<div class="container">
+
+<div class="form-area">
+  <input type="text" id="taskInput" placeholder="Digite uma nova missão...">
+  
+  <select id="priority">
+    <option value="alta">Alta</option>
+    <option value="media">Média</option>
+    <option value="baixa">Baixa</option>
+  </select>
+  
+  <button onclick="addTask()">Adicionar</button>
+</div>
+
+<div class="layout-controls">
+  <button onclick="modoLista()">📋 Modo Lista</button>
+  <button onclick="modoPainel()">🗂 Modo Painel</button>
+  <button onclick="modoFoco()">🎯 Modo Foco</button>
+  <button onclick="resetar()">🔄 Resetar</button>
+</div>
+
+<div class="board">
+
+  <div class="column alta">
+    <h2>🔴 Alta</h2>
+  </div>
+
+  <div class="column media">
+    <h2>🟡 Média</h2>
+  </div>
+
+  <div class="column baixa">
+    <h2>🟢 Baixa</h2>
+  </div>
+
+</div>
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

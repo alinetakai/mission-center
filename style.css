@@ -1,0 +1,133 @@
+:root{
+  --bg:#0f1220;
+  --card:#1b1f3b;
+  --accent:#4a6cf7;
+  --text:#ffffff;
+}
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+h1{
+  text-align:center;
+  margin-top:20px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+
+/* FORMULÁRIO */
+
+.form-area{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+input, select{
+  padding:10px;
+  border-radius:8px;
+  border:none;
+  min-width:200px;
+}
+
+/* BOTÕES */
+
+button{
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:10px 15px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* CONTROLES DE LAYOUT */
+
+.layout-controls{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:30px;
+  flex-wrap:wrap;
+}
+
+/* KANBAN BOARD */
+
+.board{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  transition:0.4s ease;
+}
+
+/* COLUNAS */
+
+.column{
+  background:var(--card);
+  padding:15px;
+  border-radius:12px;
+  flex:1;
+  min-width:250px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  transition:0.4s ease;
+}
+
+.column h2{
+  text-align:center;
+}
+
+/* CORES */
+
+.alta h2{
+  color:#ff4d4d;
+}
+
+.media h2{
+  color:#ffaa00;
+}
+
+.baixa h2{
+  color:#00cc66;
+}
+
+/* CARDS */
+
+.task{
+  background:#2a2f5c;
+  padding:10px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.task:hover{
+  transform:scale(1.03);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+  .board{
+    flex-direction:column;
+  }
+}
